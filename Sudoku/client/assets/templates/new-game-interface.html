@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/assets/stylesheets/login-form.component.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="login">
+            <div>
+                <label><h3>Niveau:</h3></label><br>
+                <span class="pseuDoublon" *ngIf="!inLevel "> Veuillez choisir un niveau</span>
+                <div class="level" col-md-12>
+                    <label class="radio-inline"><input type="radio" class = "normal" name="level"   (click)="pickLevel(0)"> Normal<br></label>
+                    <label class="radio-inline"><input type="radio" class = "difficile" name="level" (click)="pickLevel(1)"> Difficile<br></label>
+
+                </div>
+                <br>
+                <button (click)="startGame()" class="btn btn-primary btn-block">Commencer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

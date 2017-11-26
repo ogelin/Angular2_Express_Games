@@ -1,0 +1,21 @@
+{
+	"metadata": {
+		"version": 4.4,
+		"type": "Object",
+		"generator": "Object3D.toJSON"
+	},
+	"object": {
+		"uuid": "CEADEF14-5234-4264-BCB5-CE3479880570",
+		"type": "PerspectiveCamera",
+		"name": "Camera",
+		"matrix": [0.939236,0,-0.343272,0,-0.147782,0.902586,-0.404351,0,0.309832,0.430511,0.847741,0,142.321259,202.754852,389.409363,1],
+		"fov": 50,
+		"zoom": 1,
+		"near": 0.1,
+		"far": 100000,
+		"focus": 10,
+		"aspect": 2.030476,
+		"filmGauge": 35,
+		"filmOffset": 0
+	}
+}

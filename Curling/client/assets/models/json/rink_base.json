@@ -1,0 +1,372 @@
+{
+    "metadata": {
+        "version": 4.4,
+        "type": "Object",
+        "generator": "Object3D.toJSON"
+    },
+    "geometries": [{
+            "uuid": "A4982C94-E548-4448-9EEF-3A92D2FD53F5",
+            "type": "BoxBufferGeometry",
+            "name": "RedLine1",
+            "width": 6.78,
+            "height": 0,
+            "depth": 0.16,
+            "widthSegments": 0,
+            "heightSegments": 0,
+            "depthSegments": 0
+        },
+        {
+            "uuid": "D36C47F5-B0EE-4164-B825-DD8EA6026E67",
+            "type": "BoxBufferGeometry",
+            "name": "RedLine2",
+            "width": 6.78,
+            "height": 0,
+            "depth": 0.16,
+            "widthSegments": 0,
+            "heightSegments": 0,
+            "depthSegments": 0
+        },
+        {
+            "uuid": "2A71FBE9-A108-4BCD-9510-249B026E54A2",
+            "type": "CylinderBufferGeometry",
+            "name": "BlueCircleEnd",
+            "radiusTop": 2.36,
+            "radiusBottom": 2.36,
+            "height": 0,
+            "radialSegments": 32,
+            "heightSegments": 1,
+            "openEnded": false
+        },
+        {
+            "uuid": "4913CE2B-1578-4FF5-8994-C8B18AD9AA7D",
+            "type": "CylinderBufferGeometry",
+            "name": "WhiteCircleEnd",
+            "radiusTop": 1.7,
+            "radiusBottom": 1.7,
+            "height": 0,
+            "radialSegments": 32,
+            "heightSegments": 1,
+            "openEnded": false
+        },
+        {
+            "uuid": "04EE3548-3C14-4CC1-954A-BBA01AAF3C92",
+            "type": "CylinderBufferGeometry",
+            "name": "RedCircleEnd",
+            "radiusTop": 0.9,
+            "radiusBottom": 0.9,
+            "height": 0,
+            "radialSegments": 32,
+            "heightSegments": 1,
+            "openEnded": false
+        },
+        {
+            "uuid": "D45504B5-E598-4B2A-AFB2-72C216CA187A",
+            "type": "CylinderBufferGeometry",
+            "name": "CenterCircleEnd",
+            "radiusTop": 0.3,
+            "radiusBottom": 0.3,
+            "height": 0,
+            "radialSegments": 32,
+            "heightSegments": 1,
+            "openEnded": false
+        },
+        {
+            "uuid": "71E841B3-094E-4438-B1DF-3D07A797E7B5",
+            "type": "BoxBufferGeometry",
+            "name": "LineEnd",
+            "width": 6.78,
+            "height": 0,
+            "depth": 0.08,
+            "widthSegments": 0,
+            "heightSegments": 0,
+            "depthSegments": 0
+        },
+        {
+            "uuid": "B6F30F11-021A-49EB-8EB4-D1B2D5FBD3D8",
+            "type": "BoxBufferGeometry",
+            "name": "rink",
+            "width": 6.88,
+            "height": 0,
+            "depth": 34,
+            "widthSegments": 0,
+            "heightSegments": 0,
+            "depthSegments": 0
+        },
+        {
+            "uuid": "EB72021C-C175-4B4D-8EA1-7B3C527CBBD4",
+            "type": "BoxBufferGeometry",
+            "name": "MedianLine",
+            "width": 0.08,
+            "height": 0,
+            "depth": 33.56,
+            "widthSegments": 0,
+            "heightSegments": 0,
+            "depthSegments": 0
+        }
+    ],
+    "materials": [{
+            "uuid": "F1742514-ED62-4843-B6C0-339E17A5F11E",
+            "type": "MeshLambertMaterial",
+            "name": "RedLine1",
+            "color": 16777215,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 16711680,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        },
+        {
+            "uuid": "024083A7-D5B9-417B-978A-0FEAB126D426",
+            "type": "MeshLambertMaterial",
+            "name": "RedLine2",
+            "color": 16777215,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 16711680,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        },
+        {
+            "uuid": "37C073DE-83F4-4ED1-9687-E130CFD0C443",
+            "type": "MeshLambertMaterial",
+            "name": "BlueCircleEnd",
+            "color": 16777215,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 255,
+            "side": 2,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        },
+        {
+            "uuid": "E8803984-5AF6-438B-8AAA-1772584C672E",
+            "type": "MeshLambertMaterial",
+            "name": "WhiteCircleEnd",
+            "color": 16777215,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 16777215,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        },
+        {
+            "uuid": "F398B0B8-488E-4FF3-AD9D-3A4F071663BF",
+            "type": "MeshLambertMaterial",
+            "name": "RedCircleEnd",
+            "color": 16777215,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 16711680,
+            "side": 2,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        },
+        {
+            "uuid": "F4A7CC5A-BC57-47EB-943E-E6BB137CA561",
+            "type": "MeshLambertMaterial",
+            "name": "CenterCircleEnd",
+            "color": 16777215,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 16777215,
+            "shading": 1,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        },
+        {
+            "uuid": "F452D056-6F79-4E81-A8B1-302AD7C9C961",
+            "type": "MeshLambertMaterial",
+            "name": "LineEnd",
+            "color": 16777215,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 16777215,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        },
+        {
+            "uuid": "A2E70EDC-BF54-4879-8D8D-02E7DBD1CA29",
+            "type": "MeshLambertMaterial",
+            "name": "rink",
+            "color": 16382457,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 16777215,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        },
+        {
+            "uuid": "ABA15529-F7F2-4BB9-9B19-2F4B552773B4",
+            "type": "MeshLambertMaterial",
+            "name": "MedianLine",
+            "color": 16777215,
+            "roughness": 0.5,
+            "metalness": 0.5,
+            "emissive": 16777215,
+            "side": 1,
+            "depthFunc": 3,
+            "depthTest": true,
+            "depthWrite": true,
+            "skinning": false,
+            "morphTargets": false
+        }
+    ],
+    "object": {
+        "uuid": "31517222-A9A7-4EAF-B5F6-60751C0BABA3",
+        "type": "Scene",
+        "name": "Rink_Scene",
+        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+        "children": [{
+                "uuid": "B984ADF0-EDBC-423E-9538-ACF36BCF0D5B",
+                "type": "Mesh",
+                "name": "RedLine1",
+                "matrix": [0.98, 0, 0, 0, 0, 0.98, 0, 0, 0, 0, 0.98, 0, 0, 0.01, 5, 1],
+                "geometry": "A4982C94-E548-4448-9EEF-3A92D2FD53F5",
+                "material": "F1742514-ED62-4843-B6C0-339E17A5F11E"
+            },
+            {
+                "uuid": "E0CB10D6-060F-49F9-950E-A22AE0F53027",
+                "type": "Mesh",
+                "name": "RedLine2",
+                "matrix": [0.98, 0, 0, 0, 0, 0.98, 0, 0, 0, 0, 0.98, 0, 0, 0.01, -5, 1],
+                "geometry": "D36C47F5-B0EE-4164-B825-DD8EA6026E67",
+                "material": "024083A7-D5B9-417B-978A-0FEAB126D426"
+            },
+            {
+                "uuid": "1DA423AF-25BC-4F3C-AC68-D3331433A5AF",
+                "type": "Group",
+                "name": "CircleStart",
+                "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.41, -7.75, 40.349998, 1],
+                "children": [{
+                        "uuid": "553AAB6F-2281-47CB-B030-75331D618BD3",
+                        "type": "Mesh",
+                        "name": "BlueCircleStart",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4, 7.77, -28.969999, 1],
+                        "geometry": "2A71FBE9-A108-4BCD-9510-249B026E54A2",
+                        "material": "37C073DE-83F4-4ED1-9687-E130CFD0C443"
+                    },
+                    {
+                        "uuid": "0454928F-031A-4675-B55E-0F0136E03DC7",
+                        "type": "Mesh",
+                        "name": "WhiteCircleStart",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4, 7.778, -28.969999, 1],
+                        "geometry": "4913CE2B-1578-4FF5-8994-C8B18AD9AA7D",
+                        "material": "E8803984-5AF6-438B-8AAA-1772584C672E"
+                    },
+                    {
+                        "uuid": "893A7380-0F10-48F2-8AC2-D4508F64CE54",
+                        "type": "Mesh",
+                        "name": "RedCircleStart",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4, 7.78, -28.969999, 1],
+                        "geometry": "04EE3548-3C14-4CC1-954A-BBA01AAF3C92",
+                        "material": "F398B0B8-488E-4FF3-AD9D-3A4F071663BF"
+                    },
+                    {
+                        "uuid": "8E83AA7A-2C19-4EE6-B7CB-CACFB320E85A",
+                        "type": "Mesh",
+                        "name": "CenterCircleStart",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4, 7.79, -28.969999, 1],
+                        "geometry": "D45504B5-E598-4B2A-AFB2-72C216CA187A",
+                        "material": "F4A7CC5A-BC57-47EB-943E-E6BB137CA561"
+                    },
+                    {
+                        "uuid": "30C20A87-EC6F-429E-A1A0-EF8F230BD1BC",
+                        "type": "Mesh",
+                        "name": "LineStart",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.45, 7.8, -28.959999, 1],
+                        "geometry": "71E841B3-094E-4438-B1DF-3D07A797E7B5",
+                        "material": "F452D056-6F79-4E81-A8B1-302AD7C9C961"
+                    }
+                ]
+            },
+            {
+                "uuid": "63B118D4-7BA1-4BAD-8DAD-16B4B46D1244",
+                "type": "Mesh",
+                "name": "rink",
+                "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+                "geometry": "B6F30F11-021A-49EB-8EB4-D1B2D5FBD3D8",
+                "material": "A2E70EDC-BF54-4879-8D8D-02E7DBD1CA29"
+            },
+            {
+                "uuid": "A5865619-1793-4419-B1E6-C6CD6F99B8FE",
+                "type": "Mesh",
+                "name": "MedianLine",
+                "matrix": [0.98, 0, 0, 0, 0, 0.98, 0, 0, 0, 0, 0.98, 0, 0, 0.05, 0.1, 1],
+                "geometry": "EB72021C-C175-4B4D-8EA1-7B3C527CBBD4",
+                "material": "ABA15529-F7F2-4BB9-9B19-2F4B552773B4"
+            },
+            {
+                "uuid": "7A6E16B7-0971-420E-8750-0FE10B6CC394",
+                "type": "Group",
+                "name": "CircleEnd",
+                "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.41, -7.75, 17.65, 1],
+                "children": [{
+                        "uuid": "8172B019-DA07-4B48-A56C-9491C244AC5F",
+                        "type": "Mesh",
+                        "name": "BlueCircleEnd",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4, 7.77, -28.969999, 1],
+                        "geometry": "2A71FBE9-A108-4BCD-9510-249B026E54A2",
+                        "material": "37C073DE-83F4-4ED1-9687-E130CFD0C443"
+                    },
+                    {
+                        "uuid": "FDD84375-A7A4-4D90-B369-D6042282F076",
+                        "type": "Mesh",
+                        "name": "WhiteCircleEnd",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4, 7.778, -28.969999, 1],
+                        "geometry": "4913CE2B-1578-4FF5-8994-C8B18AD9AA7D",
+                        "material": "E8803984-5AF6-438B-8AAA-1772584C672E"
+                    },
+                    {
+                        "uuid": "121E94BC-DABE-4C6A-8468-EDC6933A040D",
+                        "type": "Mesh",
+                        "name": "RedCircleEnd",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4, 7.78, -28.969999, 1],
+                        "geometry": "04EE3548-3C14-4CC1-954A-BBA01AAF3C92",
+                        "material": "F398B0B8-488E-4FF3-AD9D-3A4F071663BF"
+                    },
+                    {
+                        "uuid": "B7454D08-C893-4201-AC21-06B3E391587E",
+                        "type": "Mesh",
+                        "name": "CenterCircleEnd",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.4, 7.79, -28.969999, 1],
+                        "geometry": "D45504B5-E598-4B2A-AFB2-72C216CA187A",
+                        "material": "F4A7CC5A-BC57-47EB-943E-E6BB137CA561"
+                    },
+                    {
+                        "uuid": "352A3376-7260-49C4-8753-532C47B94CEC",
+                        "type": "Mesh",
+                        "name": "LineEnd",
+                        "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.45, 7.8, -28.959999, 1],
+                        "geometry": "71E841B3-094E-4438-B1DF-3D07A797E7B5",
+                        "material": "F452D056-6F79-4E81-A8B1-302AD7C9C961"
+                    }
+                ]
+            }
+        ],
+        "background": 11184810
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/assets/stylesheets/login-form.component.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body class = "all">
+<div class="container">
+    <div class="jumbotron">
+        <h1>Sudoku</h1>
+        <p>Choississez un pseudonyme et un niveau pour démarrer une partie. </p>
+
+        <div class="login">
+            <div>
+                <label for="usr"><h3>Pseudo:</h3></label><br>
+                <span class="pseuDoublon" *ngIf="isPresent && !noName"> Pseudo deja utilisé, Veuillez entrer un nouveau</span>
+                <span class="pseuVide" *ngIf="noName"> Veuillez entrer un pseudo.  </span>
+                <input maxlength="15" placeholder="pseudo" class="form-control" id="usr" #username (keyup.enter)="addPlayer(username.value); username.value=''">
+                <br>
+                <label><h3>Niveau:</h3></label>
+                <div class="level" col-md-12>
+                    <label class="radio-inline"><input type="radio" class = "normal" name="level" [(ngModel)]="myLevel" value="normal"> Normal<br></label>
+                    <label class="radio-inline"><input type="radio" class = "difficile" name="level" [(ngModel)]="myLevel" value="hard"> Difficile<br></label>
+                </div>
+                <br>
+                <button (click)=addPlayer(username.value) (click)="checkName()" (click) = "pickMyLevel()" class="btn btn-primary btn-block">Commencer</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+
+
+</html>

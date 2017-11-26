@@ -1,0 +1,33 @@
+
+.all{
+    color: white; 
+}
+.pseuDoublon, .pseuVide {
+    color: red; 
+    font-size: 150%; 
+}
+
+
+.level:focus {
+    background-color: pink;
+}
+.radio-inline{
+    font-size: 150%; 
+}
+
+.normal:focus {
+    background-color: cadetblue;
+}
+
+.hard {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 6.3em;
+    text-align: center;
+}
+
+.jumbotron{
+    background-image: url(../photos/background-cubes.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}

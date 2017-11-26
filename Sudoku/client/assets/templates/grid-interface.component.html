@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="/assets/stylesheets/grid-interface.component.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body (window:beforeunload)="navigate()">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12 title">
+                <h1> SUDOKU</h1>
+            </div>
+                <div class="loading" *ngIf="isEmpty()">
+                    <h2>Chargement...</h2>
+                 </div>
+            <div class ="loaded" *ngIf="!isEmpty()">
+            <div class="col-md-12">
+                <div class="col-md-9">
+                    <div class="col-md-12 tableContent">
+                        <table>
+                            <tr class="grid" *ngFor="let line of sudoku  let row = index">
+                                <td class="grid1" *ngFor="let x of line.rowValue let col = index">
+                                    <input *ngIf="x.isReadOnly" class="cell" #newInput readonly [attr.id]="row + '' + col " class=" cellReadOnly " type="text" onkeypress='return event.charCode > 48 && 
+                                        event.charCode <= 57' maxlength="1" name="champ1" [(ngModel)]="x.value" (keydown)="onKeyMove($event)">
+                                    <input contenteditable="true" *ngIf="!x.isReadOnly" class="cell" #newInput (keyup)="valideInput(newInput.value, row, col)" [attr.id]="row + '' + col " class=" cell " type="text" onkeypress='return event.charCode > 48 && 
+                                        event.charCode <= 57' maxlength="1" name="champ1" [(ngModel)]="x.value" (keydown)="onKeyMove($event)" onpaste="return false">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            
+
+                <div class="col-md-3 panelCrtl">
+
+
+                    <div class="col-md-12">
+                                                <div class="levelIN">
+                            <div *ngFor="let level of levels;let last = last;let index = index">
+                                <div *ngIf="last===true"> Niveau: {{level.name}}</div>
+                                
+                            </div>
+                        </div>
+                        <button class="btn btn-default btn-time" (click)="show = !show">{{show ? 'Montrer temps' : 'Cacher temps'}}</button>
+                        <br>
+                        <div *ngIf="!show" class="chrono"> Temps :
+                            <span class="minuterie">{{_timer.min}} : </span>
+                            <span class="minuterie">{{_timer.sec}}</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 btn-reinit">
+                        <button class="btn btn-default" (click)="reinitialise()" *ngIf="!youWon">Réinitialiser</button>
+                        <button type="button" class="btn btn-default" (click)="startNewGame()">Nouvelle partie</button>
+                    </div>
+                    <div class="level col-md-12">
+
+
+                        <div *ngIf="youWon" id="message"> Bravo champion!!! <br> <img src="assets/photos/felicitation.gif" id=mickey></div>
+                        
+                        <div *ngIf="youWon && isbestPlayer" id="bestPlayer"> Meilleurs scores
+                            <div *ngFor="let bestPlayer of bestPlayerScore">
+                                <span >{{bestPlayer.username}} : {{bestPlayer.score}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+
+</html>

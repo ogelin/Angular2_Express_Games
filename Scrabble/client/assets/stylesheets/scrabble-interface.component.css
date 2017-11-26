@@ -1,0 +1,524 @@
+#instructions {
+    top: 47px;
+    font-size: 13px;
+    position: relative;
+    left: 61px;
+    background: chocolate;
+    color: white;
+    width: 333px;
+    height: 107px;
+}
+
+
+.col-md-6 buttonEnd {
+    
+    font-family: comic sans MS;
+    color: red;
+    width: 200px;
+}
+
+#leftovers {
+    color: black;
+    height: 22px;
+    width: 291px;
+    margin: 0%;
+    bottom: 880px;
+    right: 39px;
+}
+
+body {
+    background-image: url(../models/wood-pattern-background.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.angular-with-newlines {
+    white-space: pre-wrap;
+}
+
+.gridTile {
+    background-color: burlywood;
+}
+
+.col-md-12.crtlPanel {
+    padding-top: 13px;
+    width: auto;
+    height: 97px;
+    margin-top: 6px;
+    margin-bottom: 95px;
+    margin-left: 100 px;
+    background-color: transparent;
+}
+
+.col-md-12.menu {
+    margin: 0px;
+    padding: 1px 1px 1px 1px;
+    height: 68px;
+    width: auto;
+    margin-left: 60px;
+}
+
+.col-md-12.innerMenu {
+    height: auto;
+    width: auto;
+}
+
+.col-md-3.exitBtn {
+    width: 163px;
+    padding-top: 25px;
+    margin-left: 100px;
+}
+
+.title h1 {
+    font-size: 43px;
+    color: white;
+    font-style: oblique;
+    font-family: comic sans MS;
+    font-weight: 600;
+}
+
+button {
+    overflow: visible;
+    width: 100%;
+}
+
+.col-md-3.avatar {
+    padding-left: 46px;
+    top: -828px;
+    height: 170px;
+    right: 27px;
+    display: inline-block;
+}
+
+.col-md-12.chrono {
+    border: 2px solid silver;
+    bottom: 832px;
+    right: 30px;
+    width: 315px;
+    background: goldenrod;
+    display: inline-block;
+}
+
+.col-md-3.player* {
+    padding: 6px 53px;
+    right: 1px;
+    height: 199px;
+    width: 293px;
+    border: 3px solid saddlebrown;
+    display: inline-block;
+}
+
+.col-md-12.imgPlayer1 {
+    background-image: url(../models/avatar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 53px;
+    width: 68px;
+    right: 30px;
+    margin: 0px;
+    bottom: 17px;
+    display: inline-block;
+}
+
+.col-md-6.imgPlayer2 {
+    background-image: url(../models/avatar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 62px;
+    width: 70px;
+    right: 38px;
+    margin: 0px;
+}
+
+.col-md-6.imgPlayer3 {
+    background-image: url(../models/avatar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 62px;
+    width: 70px;
+    right: 32px;
+    margin: 0px;
+}
+
+.col-md-6.imgPlayer4 {
+    background-image: url(../models/avatar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 62px;
+    width: 70px;
+    right: 25px;
+    margin: 0px;
+}
+
+.col-md-12.ptPlayer1 {
+    margin: 0px 0px 0px 1px;
+    bottom: 17px;
+    right: 43px;
+}
+
+.col-md-6.ptPlayer2 {
+    margin: 4px 0px 0px 1px;
+    padding-top: 3px;
+    right: 50px;
+}
+
+.col-md-6.ptPlayer3 {
+    margin: 4px 0px 0px 1px;
+    padding-top: 3px;
+    right: 45px;
+}
+
+.col-md-6.ptPlayer4 {
+    margin: 4px 0px 0px 1px;
+    padding-top: 3px;
+    right: 39px;
+}
+
+input.pointPL1 {
+    width: 62px;
+}
+
+.col-md-3.username1 {
+    right: 24px;
+    color: black;
+    text-align: center;
+    bottom: 8px;
+    border: 3px solid royalblue;
+    height: 20px;
+    width: 64px;
+}
+
+.col-md-3.username2 {
+    right: 36px;
+    top: 2px;
+}
+
+.col-md-3.username3 {
+    right: 31px;
+    top: 2px;
+}
+
+.col-md-3.username4 {
+    right: 26px;
+    top: 2px;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: comic sans MS;
+    font-size: medium;
+    line-height: inherit;
+    width: 182px;
+    height: 24px;
+    margin: 0px;
+}
+
+button.btn.btn-primary.inExitBtn {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    height: 37px;
+    font-size: 20px;
+}
+
+.col-md-12.tabSection {
+    padding-top: 0px;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    width: 920px;
+    height: 696px;
+}
+
+.col-md-9.tabContent {
+    background-color: transparent;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: -3px;
+    padding: 15px;
+    width: 899px;
+    height: 685px;
+}
+
+.col-md-12.innerTab {
+    width: 859px;
+    padding: 234px;
+    margin: 0px;
+    height: 650px;
+}
+
+table {
+    margin-left: -155px;
+    margin-top: -235px;
+}
+
+table,
+td {
+    border: 3px solid sandybrown;
+    padding: 0px 0px 0px 0px;
+}
+
+.cell {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+}
+
+#input0,
+#input1,
+#input2,
+#input3,
+#input4,
+#input5,
+#input6,
+#input7,
+#input8,
+#input9,
+#input10,
+#input11,
+#input12,
+#input13,
+#input14,
+#input15,
+#input16,
+#input32,
+#input48,
+#input64,
+#input80,
+#input96,
+#input112,
+#input128,
+#input144,
+#input160,
+#input176,
+#input192,
+#input208,
+#input224,
+#input240 {
+    background-color: green;
+    color: white;
+}
+
+input {
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+#input136 {
+    background-image: url("../models/ST.png");
+}
+
+#input17,
+#input24,
+#input31,
+#input129,
+#input143,
+#input241,
+#input248,
+#input255 {
+    background-image: url("../models/TW.png");
+}
+
+#input20,
+#input28,
+#input55,
+#input57,
+#input65,
+#input79,
+#input72,
+#input115,
+#input119,
+#input121,
+#input125,
+#input132,
+#input140,
+#input147,
+#input151,
+#input153,
+#input157,
+#input193,
+#input200,
+#input207,
+#input215,
+#input217,
+#input244,
+#input252 {
+    background-image: url("../models/DL.png");
+}
+
+#input34,
+#input51,
+#input68,
+#input85,
+#input187,
+#input204,
+#input221,
+#input238,
+#input226,
+#input211,
+#input196,
+#input181,
+#input91,
+#input76,
+#input61,
+#input46 {
+    background-image: url("../models/DW.png");
+}
+
+#input38,
+#input42,
+#input98,
+#input102,
+#input106,
+#input110,
+#input162,
+#input166,
+#input170,
+#input174,
+#input230,
+#input234 {
+    background-image: url("../models/TL.png");
+}
+
+.col-md-3.crtlTab {
+    height: 145px;
+    width: 887px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    right: 0px;
+    left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.col-md-9.easel {
+    top: 46px;
+    left: 59px;
+    width: 376px;
+    height: 129px;
+    color: black;
+    background-image: url(../models/scrabble-tile-holder.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.focused {
+    box-shadow: -0.3px -3.5px 20px 2px saddlebrown;
+}
+
+#focusPlayer0{
+    color: red;
+}
+
+.letters {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 7px;
+    height: 40px;
+    background-color: darkred;
+    color: white;
+    text-align: right;
+    font-size: 10px;
+}
+
+.tile {
+    color: black;
+    ;
+    text-align: center;
+    height: 25px;
+    width: 40px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.easel.unfocused {
+    opacity: 0.5;
+}
+
+.col-md-3.chatBox.unfocused {
+    opacity: 0.5;
+}
+
+.col-md-3.chatBox {
+    border: 3px solid saddlebrown;
+    height: 692px;
+    margin-top: 34px;
+    padding: 0px;
+    margin-left: -64px;
+    width: 321px;
+    left: 41px;
+    background-color: aliceblue;
+}
+
+.col-md-3.messagePlayers {
+    background-color: white;
+    bottom: 350%;
+    width: 313px;
+    height: 286px;
+    right: 14px;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+.col-md-3.message {
+    right: 15px;
+    width: 327px;
+    height: 107px;
+    bottom: 449px;
+}
+
+.col-md-12.innerChatBox {
+    margin-top: 554px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    height: 103px;
+}
+
+.col-md-6.inputMessage {
+    padding-top: 30px;
+    padding-left: 19px;
+    width: 211px;
+    margin: 3px;
+    right: 30px;
+}
+
+input.inInputMsg {
+    height: 38px;
+    width: 203px;
+    padding: 3px;
+    margin-top: -28px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+
+/*.col-md-6.buttonSend {
+    padding-top: 10px;
+    padding-left: 84px;
+    width: 112px;
+    height: 38px;
+    margin: 1px;
+    left: 111px;
+}
+*/
+
+.col-md-6.buttonSend {
+    padding-top: 10px;
+    padding-left: 84px;
+    width: 112px;
+    height: 38px;
+    margin: 1px;
+    left: 138px;
+}
+
+button.btn.btn-primary.inBtnSend {
+    height: 37px;
+    width: 71px;
+    margin-top: -88px;
+    margin-bottom: 2px;
+    padding: 1px;
+}

@@ -1,0 +1,64 @@
+body {
+    background-image: url(../models/wood-pattern-background.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+body,
+input,
+h1,
+.button {
+    font-family: Comic Sans MS;
+}
+
+.col-md-3 exitBtn {
+    font-family: Comic Sans Ms;
+}
+
+.title {
+    font-family: Comic Sans MS;
+    font-size: 43px;
+    color: white;
+    font-style: oblique;
+    font-weight: 600;
+    text-align: center;
+}
+
+#waiting {
+    font-family: Comic Sans MS;
+    color: white;
+    text-align: center;
+}
+
+.col-md-12.messagePlayers {
+    font-family: Comic Sans MS;
+    background-color: white;
+    width: 289px;
+    height: 289px;
+    padding: 10px;
+    margin: 0px;
+    overflow: auto;
+    right: 337px;
+    top: 123px;
+}
+
+.col-md-12.inputMessage {
+    font-family: Comic Sans MS;
+    padding-top: 10px;
+    width: 211px;
+    margin: 3px;
+    top: 121px;
+    right: 356px;
+}
+
+.col-md-3.exitBtn {
+    font-family: Comic Sans MS;
+    top: 106px;
+    left: 329px;
+}
+
+.col-md-3.missPlayers {
+    font-family: Comic Sans MS;
+    color: white;
+    text-align: left;
+}

@@ -1,0 +1,16 @@
+<h1> Tableau de bord </h1>
+
+<h2> Nombre de grilles disponibles </h2>
+<span> Normal: <%= nNormalGrid %> grilles </span> <br> <br>
+<span> Difficile: <%= nDifficultGrid %> grilles </span>
+
+<h2> Les <%= nEvents %> derniers événements </h2>
+<p>
+    <%
+        for(let idxEvent = 0; idxEvent < nEvents; idxEvent++) {%>
+            <%= idxEvent + 1%><span>)</span> <%= lastEvents[idxEvent]%> <br>
+        <%}
+    %>
+</p>
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/assets/stylesheets/login-form.component.css">
+</head>
+
+<div class="login">
+    <div>
+        <h1>Scrabble</h1>
+        <h2>Entrer un pseudo pour commencer une partie</h2>
+        <input autofocus maxlength="15" placeholder="pseudo" #username (keyup.enter)="addPlayer(username.value); username.value=''">
+        <button class="button" (click)=addPlayer(username.value) (click)=checkUsernameExist()>Commencer</button>
+
+        <div class="col-md-12">
+            <label class="radio-inline"><input type="radio" class = "player2" name="partyType" [(ngModel)]="nbPlayer" value="2"> 2 player<br></label>
+            <label class="radio-inline"><input type="radio" class = "player3" name="partyType" [(ngModel)]="nbPlayer" value="3"> 3 player<br></label>
+            <label class="radio-inline"><input type="radio" class = "player4" name="partyType" [(ngModel)]="nbPlayer" value="4"> 4 player<br></label>
+        </div>
+
+    </div>
+    <span class="pseuDoublon" *ngIf="isPresent"> Pseudo deja utilisé, Veuillez entrer un nouveau </span>
+</div>
+
+</html>

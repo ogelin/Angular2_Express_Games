@@ -1,0 +1,78 @@
+.md-progress-bar {
+    height: 100px;
+    stroke: red;
+    bottom: 10%;
+    margin-left: 15%;
+    position: absolute;
+}
+
+.nocursor {
+    cursor: none;
+}
+
+.spin-button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10%;
+    bottom: 10%;
+    position: absolute;
+}
+
+.restart-button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40%;
+    bottom: 10%;
+    position: absolute;
+}
+
+.home-button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 55%;
+    bottom: 10%;
+    position: absolute;
+}
+
+.loading {
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 50%;
+    position: absolute;
+}
+
+.bestPlayer {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 40%;
+    bottom: 30%;
+    position: absolute;
+}

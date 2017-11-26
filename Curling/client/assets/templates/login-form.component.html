@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/assets/stylesheets/login-form.component.css">
+
+</head>
+
+<div class="login">
+    <div>
+        <h1>Curling</h1>
+        <p>Choississez un pseudonyme et un niveau pour démarrer une partie.</p>
+        <label for="usr"><h3>Pseudo:</h3></label>
+        <span class="pseuDoublon" *ngIf="isPresent && !noName"> Pseudo deja utilisé, Veuillez entrer un nouveau</span>
+        <span class="pseuVide" *ngIf="noName"> Veuillez entrer un pseudo.  </span>
+        <input maxlength="15" placeholder="pseudo" class="form-control" id="usr" #username (keyup.enter)="addPlayer(username.value, normal.checked, difficult.checked); username.value=''">
+        <br>
+        <label><h3>Niveau:</h3></label>
+        <div class="level" col-md-12>
+            <label class="radio-inline"><input #normal type="radio" class = "normal" name="level" [(ngModel)]="myLevel" value="normal"> Normal<br></label>
+            <label class="radio-inline"><input #difficult type="radio" class = "difficile" name="level" [(ngModel)]="myLevel" value="hard"> Difficile<br></label>
+        </div>
+        <button *ngIf="normal.checked || difficult.checked" (click)="addPlayer(username.value, normal.checked, difficult.checked)" (click)="checkName()" (click)="pickMyLevel()" class="btn btn-primary btn-block">Commencer</button>
+        <span *ngIf="!normal.checked && !difficult.checked"> Choisir un niveau svp.  </span> <br>
+    </div>
+</div>
+
+</html>

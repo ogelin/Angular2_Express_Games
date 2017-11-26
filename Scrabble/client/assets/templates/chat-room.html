@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/assets/stylesheets/chat-room.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Salle d'attente Scrabble</h1>
+        <h3 id="waiting"> Nous préparons la partie... </h3>
+
+    </div>
+    <div>
+        <div class="col-md-3 missPlayers">
+            <h2>On attend {{missingPlayers}} joueur(s) pour commencer la partie</h2>
+        </div>
+        <div class="col-md-3">
+            <div class="col-md-12 messagePlayers">
+                <ul class="list-group">
+                    <p class="angular-with-newlines" *ngFor="let message of messages; let i = index">
+                        {{message}}</p>
+                </ul>
+            </div>
+            <div class="col-md-12 inputMessage">
+                <input [(ngModel)]="message" placeholder="Saissisez un message" (keyup)="sendMessage($event)">
+            </div>
+        </div>
+
+        <div class="col-md-3 username2" *ngFor="let player of players; let last = last; let index = index;">
+            <div>Username: {{players[index].username}}</div>
+        </div>
+        <div class="col-md-3 exitBtn">
+            <button type="button" class="btn btn-primary inExitBtn" (click)="exitGame()">Sortie</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

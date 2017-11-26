@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="/assets/stylesheets/scrabble-interface.component.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Jeu de Scrabble</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-9 playArea">
+            <div class="col-md-12 crtlPanel">
+                <div class="col-md-12 menu">
+                    <div class="col-md-12 innerMenu">
+                        
+                        <div class="col-md-6 title">
+                            
+                            <h1>SCRABBLE</h1>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <!--scrabble board-->
+            <div class="col-md-12 tabSection">
+                <div class="col-md-6 tabContent">
+                    <div class="col-md-12 innerTab">
+                        <table>
+                            <tr class="grid" *ngFor="let line of scrabble  let row = index">
+                                <td class="grid1" *ngFor="let x of line.letters let col = index">
+                                    <input [attr.id]="'input' + getIndexValue(row,col)" class=" cell " type="text" name="champ1" [(ngModel)]="x.letter" readonly>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--easel-->
+                <div class="col-md-3 crtlTab">
+                    <div class="col-md-9 easel" id="easel">
+                        <div class="letters" *ngFor="let tile of easel.tiles; let i = index">
+                            <input [attr.id]="'letter' + i" class="tile" type="text" [(ngModel)]="tile.letter" readonly>
+                            <p #easelPoints>{{tile.value}} &nbsp; </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 instruction" *ngIf="needsInstructions" id="instructions">
+                        <p>Pour activer le chevalet, sélectionnez la touche TAB. Puis, sélectionnez une letter avec sa touche correspondante sur le clavier. Pour échanger des lettres sur le chevalet, utilisez les flèches du clavier. Saissisez "!aide" dans
+                            la boîte chat pour connaître toutes les commandes disponibles.</p>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <!--exit button-->
+        
+        <div class="col-md-3 exitBtn">
+            <button type="button" class="btn btn-primary inExitBtn" (click)="exitGame()">Sortie</button>
+        </div>
+        
+        <!--chat area-->
+        <div class="col-md-3 chatBox" id="chatBox">
+            <div class="col-md-12 innerChatBox">
+                <div class="col-md-3 messagePlayers">
+                    <ul class="list-group">
+                        <p class="angular-with-newlines" *ngFor="let message of messages; let i = index">
+                            {{message}}</p>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-3 avatar" *ngFor="let player of players; let i = index;">
+                        <div [attr.id]="'focusPlayer' + i" class="col-md-12 player1">
+                            <div class="col-md-12 imgPlayer1"></div>
+                            <div class="col-md-12 ptPlayer1">
+                                <h6 class="pointPL1"> Username: {{player.username}} </h6>
+                                <h6 class="pointPL1"> Pts: {{player.score}} </h6>
+                                <h6 *ngIf="player.easel.tiles.length !== 7"> Tuiles: {{player.easel.tiles.length}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 ">
+                    <div class="col-md-12 chrono">Chrono: {{min}} : {{sec}}</div>
+                    <div class="col-md-12" id="leftovers">Tuiles restantes: {{bagSize}}</div>
+                </div>
+
+                <div class="col-md-3 message">
+                    <div class="col-md-6 inputMessage">
+                        <input [(ngModel)]="message" placeholder="Saissisez un message" (keyup)="sendMessage($event)">
+                    </div>
+                    
+                    <div class="col-md-6 buttonSend">
+                        <button type="button" class="btn btn-primary inBtnSend" (click)="sendMessage()">Entrée</button>
+                    </div>
+
+                </div>
+                <div class="col-md-12 end">
+                            <button (click)="endGame()">cliquez ici quand vous finissez la partie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

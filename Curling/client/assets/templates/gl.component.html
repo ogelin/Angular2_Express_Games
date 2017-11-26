@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/assets/stylesheets/gl.component.css">
+</head>
+
+<modifier [container]="container" [webgltext]="webgltext"></modifier>
+<div #container (mouseup)='onMouseUp()' (mouseup)='sweeping()' (mousedown)='onMouseDown($event)' class={{cursor}}>
+    <input *ngIf="ready != false && !restart()" type="button" class="spin-button" (click)="changeSpin()" value="Spin" />
+    <input *ngIf="ready != false && restart()" type="button" class="restart-button" (click)="restartGame()" value="Recommencer"
+    />
+    <input *ngIf="ready != false && restart()" type="button" class="home-button" (click)="homePage()" value="Accueil" />
+    <div *ngIf="ready != false && restart()"  id="bestPlayer" class="bestPlayer"> Meilleurs scores
+        <div *ngFor="let bestPlayer of bestPlayerScore">
+            <span>{{bestPlayer.username}} : {{bestPlayer.scoreHuman}}  -  {{bestPlayer.scoreCPU}}</span>
+        </div>
+    </div>
+    <md-progress-circle *ngIf='!isLaunch && !handOver && isMouseDown  && !isMouseUp ' class="md-progress-bar" md-mode='determinate'
+        value={{speedInPercentage}} color={{speedBarColor}}></md-progress-circle>
+
+    <div class="loading" *ngIf="ready == false">
+        <img src="/assets/images/loading.gif" />
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,224 @@
+
+.col-md-12.title {
+    padding-left: 30px;
+    margin-bottom: 36px;
+    margin-top: 1px;
+    font-family: comic sans MS;
+}
+.col-md-3.panelCrtl{
+    padding: 0px;
+    margin-top: 45px; 
+    background-color: #eee;
+    height: auto;
+    display:inline-block;
+    font-family: comic sans MS;
+}
+
+body{
+    background-image: url(../photos/Cool-Wallpapers-Background-HD-Wallpaper.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+button {
+    overflow: visible;
+    width: 100%;
+}
+button.btn.btn-danger.btn-lg.btn-erase {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+button.btn.btn-danger.btn-lg.btn-stop {
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+button.btn.btn-default.btn-time {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+button.btn.btn-default.btn-reinit {
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+.col-md-12.tableContent {
+    background-color: #eee;
+    margin-top: 43px;
+    padding: 15px;
+    width: 410px;
+    display:inline-block;
+}
+.col-md-8 col-md-offset-2{
+    display:inline-block;
+
+}
+.title h1 {
+    font-size: 43px;
+    color: white;
+    font-family: comic sans MS;
+    font-weight: 600;
+}
+.pseudo {
+    margin-top: 5px;
+    width: 11em;
+    text-align: left;
+}
+
+.chrono {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.minuterie{
+    color: black; 
+}
+
+.loading{
+    color: white;
+    font-family: comic sans MS;
+
+}
+
+.levelIN {
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+.level {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 3em;
+}
+
+.level,
+p {
+    width: 5em;
+    text-align: left;
+}
+
+.normal {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 7.5em;
+    text-align: center;
+}
+
+.hard {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 7.5em;
+    text-align: center;
+ }
+
+    table {
+  margin: 0px;
+}
+
+table,
+td {
+    border: 1px solid black;
+    padding: 0px 0px 0px 0px;
+}
+
+table td:nth-child(1) {
+    border-left: 3px solid black;
+}
+
+table tr:nth-child(1) {
+    border-top: 3px solid black;
+}
+
+table tr:nth-of-type(3n) td {
+    border-bottom: 3px solid #000;
+}
+
+table td:nth-child(3n) {
+    border-right: 3px solid #000;
+}
+
+.cell, .cellReadOnly {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    font-family: comic sans MS;
+}
+.cell{
+    background-color: #fff;
+    color: green;
+}
+.cellReadOnly{
+    background-color: #dff0d8;
+}
+.cell:focus, .cellReadOnly:focus {
+    border-right: 5px solid blue;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid blue;
+}
+
+#mickey{
+    width: 99%; 
+    height: 99%; 
+}
+
+#message{
+    font-family: 'comic sans MS'; 
+    font-weight: bold; 
+}
+
+input#40.cell,
+input#41.cell,
+input#42.cell,
+input#50.cell,
+input#51.cell,
+input#52.cell,
+input#60.cell,
+input#61.cell,
+input#62.cell {
+    background-color: limegreen;
+}
+
+input#46,
+input#47,
+input#48,
+input#56,
+input#57,
+input#58,
+input#66,
+input#67,
+input#68 {
+    background-color: limegreen;
+}
+
+input#03,
+input#04,
+input#05,
+input#13,
+input#14,
+input#15,
+input#23,
+input#24,
+input#25 {
+    background-color: limegreen;
+}
+
+input#63,
+input#64,
+input#65,
+input#73,
+input#74,
+input#75,
+input#83,
+input#84,
+input#85 {
+    background-color: limegreen;
+    font-family: comic sans MS;
+}
+
+input,
+select,
+textarea {
+    font-family: 'comic sans MS';
+    font-size: inherit;
+    line-height: inherit;
+    color: #78909c;
+}

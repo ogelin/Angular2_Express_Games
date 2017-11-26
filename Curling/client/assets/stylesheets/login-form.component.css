@@ -1,0 +1,13 @@
+.login {
+    text-align: center;
+    border: 25px solid lightseagreen;
+    padding: 10px;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pseuDoublon {
+    color: red
+}
